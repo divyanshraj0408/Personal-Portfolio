@@ -1,0 +1,65 @@
+.info{
+    /* border: 2px solid red; */
+    color: white;
+    margin-top: 5em;
+}
+.comments{
+    font-weight: lighter;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+    margin-left: 10px;
+    color:palevioletred;
+}
+.row{
+    display: flex;
+    justify-content:space-between ;
+}
+.row .info-text{
+    align-self: center;
+    width: 75%;
+}
+.row .info-img{
+    padding-top: 20px;
+}
+.info-text{
+    padding-top: 1em;
+    text-align: justify;
+}
+.info-img{
+    text-align:center;
+}
+.divyansh_img:hover{
+    cursor: url(../assets/heart_pointer.svg),auto;
+}
+.info-img img{
+    border-radius: 25px;
+    height: 200px;
+    width: 200px;
+}
+.skill_list{
+    /* border: 2px solid black; */
+    width: 100%;
+    text-align: center;
+}
+@media (max-width:1000px) {
+    .row{
+        flex-direction: column;
+    }
+    .row .info-text{
+        align-self:center;
+        width: 100%;
+    }
+    .row .info-img{
+        padding-top: 20px;
+    }
+    .skill_list{
+        text-align: right;
+    }
+    .achievements{
+        text-align: left;
+    }
+    .skill_list + .skill_list{
+        margin-top: 1em;
+    }
+}
