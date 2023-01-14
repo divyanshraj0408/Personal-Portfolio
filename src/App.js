@@ -5,7 +5,7 @@ import Maincontent from './components/homepage/home';
 import Footer from './components/footer/footer';
 import Projects from './components/projects/projects';
 import Contact from './components/contact/contact';
-import {HashRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 
 function App() {
