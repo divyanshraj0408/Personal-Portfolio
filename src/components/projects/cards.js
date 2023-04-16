@@ -5,13 +5,8 @@ function Cards({ headline, discription, image, link }) {
     <div className="card" style={{ backgroundImage: "url(" + image + ")" }}>
       <div className="card-content">
         <h1 className="card-title">{headline}</h1>
-        <p className="card-body">
-          {discription}
-        </p>
-        <a
-          href={link}
-          className="button"
-        >
+        <p className="card-body">{discription}</p>
+        <a href={link} className="button">
           GitHub
         </a>
       </div>
