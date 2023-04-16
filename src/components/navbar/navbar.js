@@ -14,13 +14,25 @@ function navbar() {
               <span class="line line3"></span>
             </div>
             <div class="logo">
-              <a href="/"><h1>@divyanshraj0408</h1></a>
+              <a href="/">
+                <h1>@divyanshraj0408</h1>
+              </a>
             </div>
             <div class="menu-items">
-              <li><a href="/home">./Home</a></li>
-              <li><a href="/projects">../projects</a></li>
-              <li><a href="https://drive.google.com/file/d/1IShU5OHCDkVJxyUaaPvCATX18QFJC__D/view?usp=sharing">../resume</a></li>
-              <li><a href="/contact">../contact</a></li>
+              <li>
+                <a href="/home">./Home</a>
+              </li>
+              <li>
+                <a href="/projects">../projects</a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/1IShU5OHCDkVJxyUaaPvCATX18QFJC__D/view?usp=sharing">
+                  ../resume
+                </a>
+              </li>
+              <li>
+                <a href="/contact">../contact</a>
+              </li>
             </div>
           </div>
         </div>
