@@ -6,7 +6,7 @@ function navbar() {
     <div>
       <nav>
         <div class="navbar">
-          <div class="container nav-container">
+          <div class="nav-container container">
             <input class="checkbox" type="checkbox" name="" id="" />
             <div class="hamburger-lines">
               <span class="line line1"></span>

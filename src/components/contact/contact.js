@@ -26,7 +26,7 @@ function contact() {
     };
     return (
         <>
-            <div className="container">
+            <div className="container contact-me__section">
                 <div className="info-head"><h2>.contact ☎️ <span className="comments">// hit me up</span></h2></div>
                 <div className="contact-section row">
                 <div className="link-section">

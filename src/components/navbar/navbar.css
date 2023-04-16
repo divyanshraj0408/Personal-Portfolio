@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 .container {
     max-width: 1050px;
     width: 90%;
@@ -9,6 +10,7 @@
 }
 
 .navbar {
+    font-family: 'Pathway Gothic One', sans-serif;
     width: 100%;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     position: fixed;
@@ -16,11 +18,17 @@
     background: #262626;
     z-index:1;
 }
-
+.navbar h1{
+    font-size: 2rem;
+}
+.menu-items{
+    font-size: 1.5rem;
+}
 .nav-container {
+    width: 100%;
     display: flex;
     max-width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 62px;
 }
@@ -41,10 +49,12 @@
     list-style: none;
 }
 .logo{
-    width: 65%;
+    width: 75%;
     color: white;
 }
-
+.navbar .nav-container a:hover {
+    font-weight: bolder;
+}
 
 @media(max-width:900px) {
 
@@ -53,12 +63,6 @@
         width: 90%;
         margin: auto;
     }
-
-    .navbar {
-        width: 100%;
-        /* box-shadow: 0 1px 4px rgb(146 161 176 / 15%); */
-    }
-
     .nav-container {
         display: flex;
         justify-content: space-between;
