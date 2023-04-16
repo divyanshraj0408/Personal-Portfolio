@@ -35,15 +35,14 @@ function Maincontent() {
                     <div className="info-text row">
                         <ul className="skill_list">
                             <li><h2>WebDev</h2></li>
-                            <li>html/css</li>
                             <li>javascript</li>
                             <li>reactjs</li>
+                            <li>nodejs</li>
                         </ul>
                         <ul className="skill_list">
                             <li><h2>Languages</h2></li>
                             <li>java</li>
                             <li>javascript</li>
-                            <li>python</li>
                         </ul>
                         <ul className="skill_list">
                             <li><h2>Technologies</h2></li>
@@ -62,8 +61,8 @@ function Maincontent() {
                         </ul>
                         <ul className="skill_list achievements">
                             <li><h2>DSA</h2></li>
-                            <li style={{ textDecoration: "underline" }}><a href="https://leetcode.com/divyanshraj0408/" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>Leetccode : 70+ questions solved</a></li>
-                            <li style={{ textDecoration: "underline" }}><a href="https://www.codechef.com/users/divyanshraj" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>Codechef: rating 1125</a></li>
+                            <li style={{ textDecoration: "underline" }}><a href="https://leetcode.com/divyanshraj0408/" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>Leetccode : 80+ questions solved</a></li>
+                            {/* <li style={{ textDecoration: "underline" }}><a href="https://www.codechef.com/users/divyanshraj" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>Codechef: rating 1125</a></li> */}
                         </ul>
                     </div>
                 </div>

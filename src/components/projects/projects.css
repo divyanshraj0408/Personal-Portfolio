@@ -13,7 +13,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+.project-head-div{
+  padding-top: 20px;
+}
 .card {
   /* border: 10px solid transparent; */
   line-height: 1.6;
