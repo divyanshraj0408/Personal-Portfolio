@@ -1,6 +1,6 @@
 # My Personal Portfolio Website
 
-Welcome to my personal portfolio website! This is where I showcase my skills, projects, and experiences to provide you with insights into my journey as a developer/designer/creative professional. Thank you for visiting and taking the time to explore my work.
+Welcome to my personal portfolio website! This is where I showcase my skills, projects, and experiences to provide you with insights into my journey as a developer. Thank you for visiting and taking the time to explore my work.
 
 ## Table of Contents
 
