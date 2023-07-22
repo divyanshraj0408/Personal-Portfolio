@@ -62,6 +62,13 @@ function Maincontent() {
               <li>javascript</li>
               <li>reactjs</li>
               <li>nodejs</li>
+              <li>expressjs</li>
+            </ul>
+            <ul className="skill_list">
+              <li>
+                <h2>Databases</h2>
+              </li>
+              <li>mongodb</li>
             </ul>
             <ul className="skill_list">
               <li>
