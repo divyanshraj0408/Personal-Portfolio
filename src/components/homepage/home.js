@@ -82,6 +82,7 @@ function Maincontent() {
                 <h2>Technologies</h2>
               </li>
               <li>git/github</li>
+              <li>linux</li>
             </ul>
           </div>
         </div>
@@ -93,9 +94,26 @@ function Maincontent() {
           <div className="info-text row">
             <ul className="skill_list achievements">
               <li>
+                <h2>Hackathons</h2>
+              </li>
+              <li style={{ textDecoration: "underline" }}>
+                <span>○</span>
+                <a
+                  href="https://github.com/Call-for-Code-for-Racial-Justice/Truth-Loop/pull/190"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "white" }}
+                >
+                  Won 3rd prize in SLIET's TECHFEST 2023 (Webdevelopment)
+                </a>
+              </li>
+            </ul>
+            <ul className="skill_list achievements">
+              <li>
                 <h2>OpenSource</h2>
               </li>
               <li style={{ textDecoration: "underline" }}>
+                <span>○</span>
                 <a
                   href="https://twitter.com/divyanshraj04/status/1451410541759455232/"
                   target="_blank"
@@ -106,6 +124,7 @@ function Maincontent() {
                 </a>
               </li>
               <li style={{ textDecoration: "underline" }}>
+                <span>○</span>
                 <a
                   href="https://github.com/Call-for-Code-for-Racial-Justice/Truth-Loop/pull/190"
                   target="_blank"
@@ -121,6 +140,7 @@ function Maincontent() {
                 <h2>DSA</h2>
               </li>
               <li style={{ textDecoration: "underline" }}>
+                <span>○</span>
                 <a
                   href="https://leetcode.com/divyanshraj0408/"
                   target="_blank"
@@ -130,7 +150,6 @@ function Maincontent() {
                   Leetccode : 80+ questions solved
                 </a>
               </li>
-              {/* <li style={{ textDecoration: "underline" }}><a href="https://www.codechef.com/users/divyanshraj" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>Codechef: rating 1125</a></li> */}
             </ul>
           </div>
         </div>
