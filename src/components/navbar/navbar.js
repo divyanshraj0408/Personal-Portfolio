@@ -26,7 +26,7 @@ function navbar() {
                 <a href="/projects">../projects</a>
               </li>
               <li>
-                <a href="https://drive.google.com/file/d/1IShU5OHCDkVJxyUaaPvCATX18QFJC__D/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1WlyIYm0AlB3rH6h9jbSm_TNXKLynPC1H/view?usp=sharing">
                   ../resume
                 </a>
               </li>
