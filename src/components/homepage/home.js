@@ -30,12 +30,35 @@ function Maincontent() {
           <h2 className="info-head">
             .education 🏫
             <span className="comments">
-              // Pursuing electronics engineering and loving it
+              // Pursuing engineering and loving it
             </span>
           </h2>
           <div className="info-text">
+            <h2>
+              Bachelors of technology
+              <span className="comments">2023-2026</span>
+            </h2>
             <p>
-              Currnetly, I am pursuing high school diploma in the field of
+              Currnetly, I am pursuing BTech in the field of Artificial
+              Intelligence and Machine Learning at{" "}
+              <a
+                href="https://engineering.vips.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "white" }}
+              >
+                Vivekanand Institute of Professional Studies- TC
+              </a>
+              .
+            </p>
+          </div>
+          <div className="info-text">
+            <h2>
+              Diploma
+              <span className="comments">2020-2023</span>
+            </h2>
+            <p>
+              I recently completed my high school diploma in the field of
               electronics and communication engineering at{" "}
               <a
                 href="http://sliet.ac.in/"
@@ -43,9 +66,9 @@ function Maincontent() {
                 rel="noopener noreferrer"
                 style={{ color: "white" }}
               >
-                Sant Longowal Institute of engineering and technology
+                Sant Longowal Institute of engineering and technology{" "}
               </a>
-              .
+              with an aggregate of 8.9 CGPA.
             </p>
           </div>
         </div>
