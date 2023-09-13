@@ -35,7 +35,7 @@ function Maincontent() {
           </h2>
           <div className="info-text">
             <h2>
-              Bachelors of technology
+              BTech
               <span className="comments">2023-2026</span>
             </h2>
             <p>
