@@ -39,15 +39,15 @@ function Maincontent() {
               <span className="comments">2023-2026</span>
             </h2>
             <p>
-              Currnetly, I am pursuing BTech in the field of Artificial
-              Intelligence and Machine Learning at{" "}
+              Currnetly, I am pursuing BTech in the field of Information
+              Technology at{" "}
               <a
-                href="https://engineering.vips.edu/"
+                href="https://adgitmdelhi.ac.in/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "white" }}
               >
-                Vivekanand Institute of Professional Studies- TC
+                Dr. Akhilesh Das Gupta Institute of Technology & Management
               </a>
               .
             </p>
@@ -99,6 +99,7 @@ function Maincontent() {
               </li>
               <li>java</li>
               <li>javascript</li>
+              <li>c++</li>
             </ul>
             <ul className="skill_list">
               <li>
