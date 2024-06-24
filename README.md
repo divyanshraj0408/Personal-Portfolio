@@ -49,27 +49,23 @@ However, I kindly request that you do not copy the entire content and claim it a
 
 ## Project Showcase
 
-! to be included soon
-
 Here are a few notable projects featured in my portfolio:
 
-### Project 1 - Project Name
+### Project 1 - ClassConnect
 
-Description: A brief description of the project and its purpose.
+Description: Connect with your students in a classroom like environment.
 
-Technologies Used: List of technologies and tools used in the project.
+Technologies Used: React, Typescript, Nodejs, Mongodb.
 
-Link: [Live Demo](https://www.example.com) | [GitHub Repository](https://github.com/your-username/project-repo)
+Link: [Live Demo]([https://www.example.com](https://classconnect.onrender.com/)) | [GitHub Repository](https://github.com/divyanshraj0408/classconnect)
 
-### Project 2 - Project Name
+### Project 2 - Save Tabs
 
-Description: A brief description of the project and its purpose.
+Description: Save all the weblinks in one place.
 
-Technologies Used: List of technologies and tools used in the project.
+Technologies Used: ChromeAPI, javascript, Html/Css.
 
-Link: [Live Demo](https://www.example.com) | [GitHub Repository](https://github.com/your-username/project-repo)
-
-_(Include more projects as necessary)_
+Link: [GitHub Repository](https://github.com/divyanshraj0408/savetabs)
 
 ## Contact
 
