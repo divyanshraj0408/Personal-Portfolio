@@ -1,7 +1,8 @@
 import React from "react";
 import Cards from "./cards";
 import SaveTabs from "../assets/SaveTabs.png";
-import Memegenerator from "../assets/Memegenerator.png";
+// import Memegenerator from "../assets/Memegenerator.png";
+import ClassConnect from "../assets/classconnect.png";
 function projects() {
   return (
     <div>
@@ -21,12 +22,12 @@ function projects() {
               image={SaveTabs}
             />
             <Cards
-              headline={"Meme Generator"}
+              headline={"ClassConnect"}
               discription={
-                "Generate random memes and give them your desired captions"
+                "Connect with your students in a classroom like environment."
               }
-              link={"https://github.com/divyanshraj0408/RandomMemeGenerator"}
-              image={Memegenerator}
+              link={"https://github.com/divyanshraj0408/classconnect"}
+              image={ClassConnect}
             />
           </div>
         </div>
