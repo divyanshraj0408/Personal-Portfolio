@@ -86,6 +86,7 @@ function Maincontent() {
               <li>reactjs</li>
               <li>nodejs</li>
               <li>expressjs</li>
+              <li>typescript</li>
             </ul>
             <ul className="skill_list">
               <li>

@@ -1,3 +1,7 @@
+body {
+  background-image: url("../assets/gridbackground.png");
+  /* margin: 10px; */
+}
 .info {
   color: white;
   padding-top: 20px;
