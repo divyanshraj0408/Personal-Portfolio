@@ -39,7 +39,7 @@ function Maincontent() {
               <span className="comments">2023-2026</span>
             </h2>
             <p>
-              Currnetly, I am pursuing BTech in the field of Information
+              Currently, I am pursuing BTech in the field of Information
               Technology at{" "}
               <a
                 href="https://adgitmdelhi.ac.in/"
