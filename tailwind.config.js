@@ -21,7 +21,7 @@ module.exports = {
         225: "225deg",
       },
       blur: {
-        xs: "0.8px",
+        xs: "0.4px",
       },
     },
   },

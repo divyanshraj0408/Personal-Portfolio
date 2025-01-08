@@ -3,17 +3,17 @@ import React from "react";
 const Terminal = () => {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-      <div className="relative max-w-4xl mx-auto">
+      <div className="relative w-full h-[100vh] mx-auto ">
         {/* Blurred Shadow */}
-        <div className="absolute inset-0 rounded-t-2xl bg-white opacity-10 blur-2xl -z-5"></div>
+        <div className="absolute inset-0 rounded-t-2xl bg-white opacity-10 blur-3xl"></div>
 
         {/* Gradient Background */}
         <div
-          className="absolute -inset-3 rounded-t-2xl bg-[rgba(255,255,255,0.1)] backdrop-blur-md -z-10"
+          className="absolute -inset-3 rounded-t-[30px] bg-[rgba(255,255,255,0.1)] backdrop-blur-md "
           style={{
-            borderTop: "2px solid rgba(255,255,255,0.2)",
-            borderLeft: "2px solid rgba(255,255,255,0.2)",
-            borderRight: "2px solid rgba(255,255,255,0.2)",
+            borderTop: "1px solid rgba(255,255,255,0.2)",
+            borderLeft: "1px solid rgba(255,255,255,0.2)",
+            borderRight: "1px solid rgba(255,255,255,0.2)",
             maskImage:
               "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0) 100%)",
             WebkitMaskImage:
@@ -23,8 +23,13 @@ const Terminal = () => {
 
         {/* Terminal */}
         <div
-          className="relative bg-gradient-to-b from-zinc-800 to-zinc-900 text-white rounded-t-xl shadow-lg p-6 z-10"
+          className="relative bg-gradient-to-b from-zinc-800 to-zinc-900 text-white rounded-t-[30px] shadow-lg p-6 "
           style={{
+            width: "100%",
+            height: "100%",
+            borderTop: "2px solid rgba(255,255,255,0.2)",
+            borderLeft: "2px solid rgba(255,255,255,0.2)",
+            borderRight: "2px solid rgba(255,255,255,0.2)",
             maskImage:
               "linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0) 100%)",
             WebkitMaskImage:

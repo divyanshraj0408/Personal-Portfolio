@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 const Navigation = () => {
   return (
     <nav className="w-full text-on-bg-color p-6 mb-20">
-      <div className="max-w-7xl mx-auto flex justify-between items-center relative">
+      <div className="max-w-[100%] mx-auto flex justify-between items-center relative">
         {/* Left side - Name and title */}
         <div className="w-1/3">
           <h1 className="text-lg font-normal">Divyansh Raj</h1>
@@ -12,7 +12,7 @@ const Navigation = () => {
         </div>
 
         {/* Center - Work/Info toggle */}
-        <div className="absolute left-1/2 -translate-x-1/2">
+        <div className="fixed left-1/2 -translate-x-1/2 z-10">
           <div className="flex items-center justify-between w-[150px] h-12 px-1.5 relative backdrop-blur-lg bg-white/5 rounded-3xl border border-white/10 transition-all duration-1000 ease-in-out shadow-lg">
             <button className="px-4 py-2 text-sm text-white rounded-full bg-zinc-800/90">
               Work
