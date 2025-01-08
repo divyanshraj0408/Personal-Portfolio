@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const Navigation = () => {
   return (
-    <nav className="w-full  text-on-bg-color p-6 mb-20">
+    <nav className="w-full text-on-bg-color p-6 mb-20">
       <div className="max-w-7xl mx-auto flex justify-between items-center relative">
         {/* Left side - Name and title */}
         <div className="w-1/3">
