@@ -54,8 +54,9 @@ const Terminal = () => {
               <Code2 size={40} className="text-green-400 mr-3" />
               <h2 className="text-xl text-green-400 font-mono">$ whoami</h2>
             </div>
-            <h1 className="text-5xl sm:text-5xl md:text-7xl font-bold mb-6">
-              I build <span className="text-green-400">innovative</span> <br />
+            <h1 className="text-5xl sm:text-5xl md:text-7xl font-bold mb-6 tracking-tighter">
+              <span className="italic text-pink-700">I</span> build{" "}
+              <span className="text-green-400">innovative</span> <br />
               web experiences &{" "}
               <span className="italic text-green-400">solutions.</span>
             </h1>

@@ -1,4 +1,11 @@
-import { ArrowUpRight, Github, Menu, X } from "lucide-react";
+import {
+  ArrowUpRight,
+  Github,
+  Menu,
+  X,
+  Linkedin,
+  FileMinus2,
+} from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -74,8 +81,8 @@ const Navigation = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-sm text-gray-400 hover:text-green-400 transition-colors"
             >
+              <Linkedin size={16} className="mr-1" />
               LinkedIn
-              <ArrowUpRight size={16} />
             </a>
             <a
               href="/resume.pdf"
@@ -83,8 +90,8 @@ const Navigation = () => {
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-sm px-4 py-2 backdrop-blur-lg bg-white/5 rounded-3xl border border-white/10 transition-colors"
             >
+              <FileMinus2 size={14} className="mr-1" />
               Resume
-              <ArrowUpRight size={16} />
             </a>
           </div>
         </div>
@@ -161,7 +168,7 @@ const Navigation = () => {
               className="flex items-center justify-center gap-1 text-sm px-4 py-2 bg-green-500 hover:bg-green-600 text-black rounded-full transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Resume
+              Résumé
               <ArrowUpRight size={16} />
             </a>
           </div>
