@@ -1,7 +1,9 @@
 import { ArrowUpRight, Github, Menu, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Navigation = () => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("work");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -31,7 +33,10 @@ const Navigation = () => {
                   ? "text-white bg-zinc-800/90"
                   : "text-gray-400 hover:text-white"
               }`}
-              onClick={() => setActiveTab("work")}
+              onClick={() => {
+                setActiveTab("work");
+                navigate("/");
+              }}
             >
               Work
             </button>
@@ -41,7 +46,10 @@ const Navigation = () => {
                   ? "text-white bg-zinc-800/90"
                   : "text-gray-400 hover:text-white"
               }`}
-              onClick={() => setActiveTab("info")}
+              onClick={() => {
+                setActiveTab("info");
+                navigate("/info");
+              }}
             >
               Info
             </button>

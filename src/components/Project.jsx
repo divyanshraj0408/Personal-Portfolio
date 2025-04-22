@@ -11,7 +11,7 @@ const Project = ({ image, title, description, tags, link }) => {
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="relative max-w-[100vw] mx-auto mb-20 flex flex-col items-center justify-center"
+        className="relative max-w-[70vw] mx-auto mb-20 flex flex-col items-center justify-center"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
