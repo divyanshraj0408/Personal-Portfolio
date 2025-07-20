@@ -1,15 +1,14 @@
-import meetmatesImage from "../assets/meetmates.svg";
-import classconnectImage from "../assets/classconnect.svg";
 import Terminal from "../components/Terminal";
 import Project from "../components/Project";
 const Work = () => {
+  
   const projects = [
     {
       id: 1,
-      title: "MeetMates",
+      title: "Pingo",
       description:
         "A platform for connecting like-minded individuals for collaborative projects and networking opportunities.",
-      image: meetmatesImage,
+      image: "/pics/meetmates.svg",
       tags: ["React", "Node.js", "PostgreSQL", "WebRTC", "Socket.io"],
       link: "https://www.meetmates.space/",
     },
@@ -18,7 +17,7 @@ const Work = () => {
       title: "ClassConnect",
       description:
         "An educational platform that bridges the gap between students and teachers with interactive virtual classrooms.",
-      image: classconnectImage,
+      image: "/pics/classconnect.svg",
       tags: ["React", "Node.js", "MongoDB"],
       link: "https://classconnect.onrender.com/",
     },

@@ -6,7 +6,7 @@ const Project = ({ image, title, description, tags, link }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20" id="projects">
       <a
         href={link}
         target="_blank"

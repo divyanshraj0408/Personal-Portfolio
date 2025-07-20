@@ -45,7 +45,7 @@ const Navigation = () => {
                 navigate("/");
               }}
             >
-              Work
+              Who
             </button>
             <button
               className={`px-4 py-2 text-sm rounded-full transition-all ${
@@ -58,7 +58,7 @@ const Navigation = () => {
                 navigate("/info");
               }}
             >
-              Info
+              What
             </button>
           </div>
         </div>
@@ -85,7 +85,7 @@ const Navigation = () => {
               LinkedIn
             </a>
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1PJBpH5lG_WGAd0ECSsIQUyhJsQxlMSH0/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-sm px-4 py-2 backdrop-blur-lg bg-white/5 rounded-3xl border border-white/10 transition-colors"
