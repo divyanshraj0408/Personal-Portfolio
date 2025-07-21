@@ -3,6 +3,7 @@ const Info = () => {
   const experiences = [
     {
       id: 1,
+      designation: "Cyber Security Trainee Intern",
       companyName: "DRDO (Defence Research and Development Organisation)",
       workMonths: "January 2024 – March 2024",
       workDescription: "Gained hands-on experience with honeypots and firewall configuration. Developed a home network honeypot to detect malicious scans and intrusion attempts, visualized via a custom Flask dashboard.",
@@ -15,7 +16,7 @@ const Info = () => {
       companyName: "DSEU (Delhi Skill and Entrepreneurship University)",
       workMonths: "December 2024 – February 2025",
       workDescription: "Worked on building a fatigue detection model using OpenCV and Python. Implemented a system that alerts users based on blink detection and yawn frequency, aimed at improving road safety.",
-      workImgSrc: "/pics/dseumail.png", // Replace with your actual image path
+      workImgSrc: "/pics/dseucertf.jpeg", // Replace with your actual image path
     },
   ];
 
