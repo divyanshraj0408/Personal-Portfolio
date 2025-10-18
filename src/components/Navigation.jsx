@@ -27,7 +27,7 @@ const Navigation = () => {
             <h1 className="text-lg font-normal group-hover:text-green-400 transition-colors">
               Divyansh Raj
             </h1>
-            <p className="text-sm text-gray-400">Just a try hard</p>
+            <p className="text-sm text-gray-400">Been coding vibes since 2020</p>
           </a>
         </div>
 

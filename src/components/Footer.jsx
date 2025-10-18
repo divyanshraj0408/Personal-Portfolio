@@ -61,11 +61,11 @@ const Footer = () => {
               Get In Touch
             </h4>
             <a
-              href="mailto:contact@divyanshraj.com"
+              href="mailto:divyanshraj0408@gmail.com"
               className="flex items-center text-gray-400 hover:text-green-400 transition-colors mb-3"
             >
               <Mail size={18} className="mr-2" />
-              contact@divyanshraj.com
+              divyanshraj0408@gmail.com
             </a>
 
             {/* Social Media */}

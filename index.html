@@ -1,13 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Divyansh</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divyansh</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    const icons = ['/pics/Tulip.png', '/pics/Dove.png', '/pics/AlienMonster.png'];
+    let idx = 0;
+
+    function updateFavicon() {
+      const head = document.head || document.getElementsByTagName('head')[0];
+      [...head.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"]')].forEach(el => el.remove());
+      const link = document.createElement('link');
+      link.rel = 'icon';
+      link.type = 'image/png';
+      link.href = icons[idx];
+      head.appendChild(link);
+      idx = (idx + 1) % icons.length;
+    }
+
+    updateFavicon();
+    setInterval(updateFavicon, 1500);
+  </script>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

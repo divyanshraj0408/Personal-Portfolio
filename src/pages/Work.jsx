@@ -5,6 +5,15 @@ const Work = () => {
   const projects = [
     {
       id: 1,
+      title: "EraCrux",
+      description:
+        "Canva for Data Analysis. A web application that allows users to create and collaborate on data analysis projects using a drag-and-drop interface.",
+      image: "/pics/eracrux.svg",
+      tags: ["ReactJS", "PostgreSQL", "Drizzle ORM", "Groq","Typescript"],
+      link: "https://eracrux.com/",
+    },
+    {
+      id: 2,
       title: "Pingo",
       description:
         "A platform for connecting like-minded individuals for collaborative projects and networking opportunities.",
@@ -13,7 +22,7 @@ const Work = () => {
       link: "https://www.meetmates.space/",
     },
     {
-      id: 2,
+      id: 3,
       title: "ClassConnect",
       description:
         "An educational platform that bridges the gap between students and teachers with interactive virtual classrooms.",
