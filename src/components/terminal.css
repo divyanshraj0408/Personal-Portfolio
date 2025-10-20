@@ -1,0 +1,47 @@
+.brushed-steel-text {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    /* font-size: 3rem; */
+    font-weight: 800;
+    /* letter-spacing: 0.5px; */
+    text-transform: uppercase;
+    background: linear-gradient(to right, #8d8d8d, #e0e0e0, #8d8d8d);
+    /* brushed texture */
+    background-size: 100% 3px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:
+        0 1px 1px rgba(255, 255, 255, 0.2),
+        0 -1px 1px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Thin diagonal light streak — runs only once */
+.brushed-steel-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(115deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-20deg);
+    opacity: 0.6;
+    animation: shine-streak 2.5s ease-in-out 0.5s 1 forwards;
+    /* runs once (1), with 0.5s delay, and stays at end position */
+}
+
+@keyframes shine-streak {
+    0% {
+        left: -60%;
+    }
+
+    100% {
+        left: 120%;
+    }
+}

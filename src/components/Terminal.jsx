@@ -1,4 +1,5 @@
 import { Code2, Terminal as TerminalIcon } from "lucide-react";
+import "./terminal.css"
 
 const Terminal = () => {
   return (
@@ -59,14 +60,14 @@ const Terminal = () => {
           {/* Main Content (Centered) */}
           <div className="flex flex-col justify-center items-center flex-grow text-center">
             <div className="flex items-center justify-center mb-6 lg:flex hidden">
-              <Code2 size={40} className="text-green-400 mr-3" />
-              <h2 className="text-xl text-green-400 font-mono ">$ whoami</h2>
+              <Code2 size={40} className="text-gray-400 mr-3" />
+              <h2 className="text-xl text-gray-400 font-mono ">$ whoami</h2>
             </div>
             <h1 className="text-5xl sm:text-5xl md:text-7xl font-bold mb-6 tracking-tighter">
               <span className="italic text-pink-700">I</span> like to build{" "}
-              <span className="text-green-400">Products</span> <br />
+              <span className="brushed-steel-text italic">Products</span> <br />
               {/* not {" "} */}
-              <span className="italic text-green-400">end to end.</span>
+              <span className="text-gray-400">end to end.</span>
             </h1>
             <div className="mb-10 text-xl text-gray-300 max-w-2xl">
               As a computer science student, I love turning ideas into real-world applications with clean, efficient code and seamless user experiences.

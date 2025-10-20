@@ -13,13 +13,14 @@ const Navigation = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("work");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+    // console.log("Toggled mobile menu:", !mobileMenuOpen);
+    setMobileMenuOpen((prev) => !prev);
   };
 
+
   return (
-    <nav className="w-full text-on-bg-color p-6 mb-10 top-0 z-50 ">
+    <nav className="relative w-full text-on-bg-color p-6 mb-10 top-0 z-50">
       <div className="max-w-[100%] mx-auto flex justify-between items-center relative">
         {/* Left side - Name and title */}
         <div className="w-1/3">
@@ -35,11 +36,10 @@ const Navigation = () => {
         <div className="hidden md:block fixed left-1/2 -translate-x-1/2 z-10">
           <div className="flex items-center justify-between w-[150px] h-12 px-1.5 relative backdrop-blur-lg bg-white/5 rounded-3xl border border-white/10 transition-all duration-300 ease-in-out shadow-lg">
             <button
-              className={`px-4 py-2 text-sm rounded-full transition-all ${
-                activeTab === "work"
-                  ? "text-white bg-zinc-800/90"
-                  : "text-gray-400 hover:text-white"
-              }`}
+              className={`px-4 py-2 text-sm rounded-full transition-all ${activeTab === "work"
+                ? "text-white bg-zinc-800/90"
+                : "text-gray-400 hover:text-white"
+                }`}
               onClick={() => {
                 setActiveTab("work");
                 navigate("/");
@@ -48,11 +48,10 @@ const Navigation = () => {
               Who
             </button>
             <button
-              className={`px-4 py-2 text-sm rounded-full transition-all ${
-                activeTab === "info"
-                  ? "text-white bg-zinc-800/90"
-                  : "text-gray-400 hover:text-white"
-              }`}
+              className={`px-4 py-2 text-sm rounded-full transition-all ${activeTab === "info"
+                ? "text-white bg-zinc-800/90"
+                : "text-gray-400 hover:text-white"
+                }`}
               onClick={() => {
                 setActiveTab("info");
                 navigate("/info");
@@ -109,38 +108,39 @@ const Navigation = () => {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-zinc-900/95 backdrop-blur-md border-b border-white/5 p-4">
-          <div className="flex justify-center mb-4">
+        // <div className="md:hidden absolute top-full left-0 right-0 bg-zinc-900/95 backdrop-blur-md border-b border-white/5 p-4 z-[999]">
+        <div className="md:hidden">
+          <div className="flex justify-center mb-1 mt-4">
             <div className="flex items-center justify-between w-[150px] h-12 px-1.5 relative backdrop-blur-lg bg-white/5 rounded-3xl border border-white/10 transition-all duration-300 ease-in-out shadow-lg">
               <button
-                className={`px-4 py-2 text-sm rounded-full transition-all ${
-                  activeTab === "work"
-                    ? "text-white bg-zinc-800/90"
-                    : "text-gray-400 hover:text-white"
-                }`}
+                className={`px-4 py-2 text-sm rounded-full transition-all ${activeTab === "work"
+                  ? "text-white bg-zinc-800/90"
+                  : "text-gray-400 hover:text-white"
+                  }`}
                 onClick={() => {
                   setActiveTab("work");
+                  navigate("/");
                   setMobileMenuOpen(false);
                 }}
               >
                 Work
               </button>
               <button
-                className={`px-4 py-2 text-sm rounded-full transition-all ${
-                  activeTab === "info"
-                    ? "text-white bg-zinc-800/90"
-                    : "text-gray-400 hover:text-white"
-                }`}
+                className={`px-4 py-2 text-sm rounded-full transition-all ${activeTab === "info"
+                  ? "text-white bg-zinc-800/90"
+                  : "text-gray-400 hover:text-white"
+                  }`}
                 onClick={() => {
                   setActiveTab("info");
                   setMobileMenuOpen(false);
+                  navigate("/info");
                 }}
               >
                 Info
               </button>
             </div>
           </div>
-          <div className="flex flex-col space-y-4">
+          {/* <div className="flex flex-col space-y-4">
             <a
               href="https://github.com/divyanshraj"
               target="_blank"
@@ -171,7 +171,7 @@ const Navigation = () => {
               Résumé
               <ArrowUpRight size={16} />
             </a>
-          </div>
+          </div> */}
         </div>
       )}
     </nav>
