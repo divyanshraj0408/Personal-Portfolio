@@ -1,4 +1,5 @@
 import NoiseBox from "../components/NoiseBox";
+import GitHubHeatmap from "../components/github-heatmap";
 const Info = () => {
   const experiences = [
     {
@@ -42,6 +43,8 @@ const Info = () => {
         workImgSrc={experience.workImgSrc}
       />
     ))}
+
+    {/* <GitHubHeatmap username={"divyanshraj0408"}/> */}
     {/* <NoiseBox designation companyName workMonths workdescription workImgSrc /> */}
   </>;
 };
