@@ -66,7 +66,7 @@ const Navigation = () => {
         <div className="hidden md:flex w-1/3 justify-end">
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com/divyanshraj"
+              href="https://github.com/divyanshraj0408"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-sm text-gray-400 hover:text-green-400 transition-colors"
@@ -75,7 +75,7 @@ const Navigation = () => {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/divyanshraj"
+              href="https://linkedin.com/in/divyansh-raj"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-sm text-gray-400 hover:text-green-400 transition-colors"
