@@ -84,7 +84,7 @@ const Navigation = () => {
               LinkedIn
             </a>
             <a
-              href="https://drive.google.com/file/d/1PJBpH5lG_WGAd0ECSsIQUyhJsQxlMSH0/view?usp=sharing"
+              href="https://drive.google.com/file/d/1HzzE9-6sw1p3rjLmXzKCaEs7JXEURCnO/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-sm px-4 py-2 backdrop-blur-lg bg-white/5 rounded-3xl border border-white/10 transition-colors"
