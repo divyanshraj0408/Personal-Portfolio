@@ -71,7 +71,7 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex space-x-4 mt-6">
               <a
-                href="https://github.com/divyanshraj"
+                href="https://github.com/divyanshraj0408"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-zinc-700 transition-colors"
@@ -79,7 +79,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com/in/divyanshraj"
+                href="https://linkedin.com/in/divyansh-raj"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-zinc-700 transition-colors"
@@ -87,7 +87,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://twitter.com/divyanshraj"
+                href="https://twitter.com/divyanshraj04"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-zinc-700 transition-colors"
