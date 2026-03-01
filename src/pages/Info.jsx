@@ -152,11 +152,25 @@ const Info = () => {
         </div>
 
         {/* Photo Card 4 */}
-        <div className="col-span-2 row-span-1 rounded-3xl border border-white/10 overflow-hidden flex items-center justify-center">
-          <img 
-            src="https://ik.imagekit.io/divyansh04/IMG_20251101_115755981.jpg?updatedAt=1772369301317" 
-            alt="Divyansh" 
-            className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" 
+        <div className="col-span-1 row-span-1 rounded-3xl border border-white/10 overflow-hidden flex items-center justify-center">
+          <video 
+            src="https://ik.imagekit.io/divyansh04/WhatsApp%20Video%202026-03-01%20at%2020.10.01.mp4" 
+            className="w-full h-full object-cover object-center"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
+        {/* Photo Card 4 */}
+        <div className="col-span-1 row-span-1 rounded-3xl border border-white/10 overflow-hidden flex items-center justify-center">
+          <video 
+            src="https://ik.imagekit.io/divyansh04/WhatsApp%20Video%202026-03-01%20at%2020.02.04.mp4" 
+            className="w-full h-full object-cover object-center"
+            autoPlay
+            loop
+            muted
+            playsInline
           />
         </div>
 
