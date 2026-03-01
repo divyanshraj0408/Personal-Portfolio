@@ -39,7 +39,7 @@ const Info = () => {
               Hey, I&apos;m <span className="text-emerald-400">Divyansh</span>
             </h1>
             <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-              A computer science student who loves turning caffeine into code. I build products end-to-end, 
+              A computer science student who doesn&apos;t know anything other than computers. I build products end-to-end, 
               obsessing over both the architecture and the pixels.
             </p>
           </div>
