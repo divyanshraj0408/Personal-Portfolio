@@ -6,13 +6,22 @@ import {
   Linkedin,
   FileMinus2,
 } from "lucide-react";
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Navigation = () => {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState("work");
+  const location = useLocation();
+  const [activeTab, setActiveTab] = useState(() => {
+    return location.pathname === "/info" ? "info" : "work";
+  });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
+  // Sync activeTab with URL on route changes
+  useEffect(() => {
+    setActiveTab(location.pathname === "/info" ? "info" : "work");
+  }, [location.pathname]);
+
   const toggleMobileMenu = () => {
     // console.log("Toggled mobile menu:", !mobileMenuOpen);
     setMobileMenuOpen((prev) => !prev);
