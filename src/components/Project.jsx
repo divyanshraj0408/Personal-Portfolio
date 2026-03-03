@@ -8,8 +8,14 @@ const Project = ({ image, title, description, tags, link }) => {
   const [delayedPos, setDelayedPos] = useState({ x: 0, y: 0 });
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isTextVisible, setIsTextVisible] = useState(true);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   const buttonTexts = ["View Project", ...(tags || [])];
+
+  // Reset image loaded state when image changes
+  useEffect(() => {
+    setIsImageLoaded(false);
+  }, [image]);
 
   // Smooth cursor following with delay
   useEffect(() => {
@@ -69,27 +75,27 @@ const Project = ({ image, title, description, tags, link }) => {
   };
 
   return (
-    <div className="mx-auto flex w-full max-w-6xl flex-col lg:flex-row gap-8 px-4 pb-16 sm:px-6 lg:px-8" id="projects">
+    <div className="mx-auto flex w-full max-w-6xl flex-col lg:flex-row gap-6 lg:gap-8 px-4 pb-10 sm:pb-16 sm:px-6 lg:px-8" id="projects">
       {/* Left Sidebar - Project Info */}
-      <div className="flex flex-col gap-6 lg:w-2/5">
+      <div className="flex flex-col gap-4 sm:gap-6 lg:w-2/5">
         {/* Header */}
-        <header className="space-y-3">
-          <p className="font-mono text-xs uppercase tracking-[0.4em] text-slate-400">
+        <header className="space-y-2 sm:space-y-3">
+          <p className="font-mono text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.4em] text-slate-400">
             Project
           </p>
-          <h2 className="text-3xl font-semibold text-white">{title}</h2>
-          <p className="text-slate-300">{description}</p>
+          <h2 className="text-2xl sm:text-3xl font-semibold text-white">{title}</h2>
+          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">{description}</p>
         </header>
 
         {/* Stack */}
         {tags && tags.length > 0 && (
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h3 className="text-lg font-semibold text-white">Stack</h3>
-            <ul className="mt-3 flex flex-wrap gap-2 text-xs text-slate-300">
+          <div className="rounded-2xl sm:rounded-3xl border border-white/10 bg-white/5 p-4 sm:p-6">
+            <h3 className="text-base sm:text-lg font-semibold text-white">Stack</h3>
+            <ul className="mt-2 sm:mt-3 flex flex-wrap gap-1.5 sm:gap-2 tet-xs text-slate-300">
               {tags.map((tag, index) => (
                 <li
                   key={index}
-                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1"
+                  className="rounded-full border border-white/10 bg-white/5 px-2.5 sm:px-3 py-1"
                 >
                   {tag}
                 </li>
@@ -102,7 +108,7 @@ const Project = ({ image, title, description, tags, link }) => {
       {/* Right Side - Project Image Preview */}
       <div className="lg:w-3/5">
         <div
-          className="relative rounded-3xl border border-white/5 p-4 transition-all duration-300 hover:border-white/20"
+          className="relative rounded-2xl sm:rounded-3xl border border-white/5 p-2 sm:p-4 transition-all duration-300 hover:border-white/20"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={() => setIsHovered(false)}
           onMouseMove={handleMouseMove}
@@ -153,13 +159,22 @@ const Project = ({ image, title, description, tags, link }) => {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block"
+            className="block relative"
             style={{ cursor: isHovered ? "none" : "pointer" }}
           >
+            {/* Skeleton */}
+            {!isImageLoaded && (
+              <div className="w-full aspect-video rounded-xl sm:rounded-2xl bg-zinc-800 animate-pulse">
+                <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-zinc-800 via-zinc-700 to-zinc-800 bg-[length:200%_100%] animate-[shimmer_1.5s_infinite]" />
+              </div>
+            )}
             <img
               src={image}
               alt={title}
-              className="w-full rounded-2xl object-cover transition-transform duration-300 hover:scale-[1.02]"
+              className={`w-full rounded-xl sm:rounded-2xl object-cover transition-all duration-500 hover:scale-[1.02] ${
+                isImageLoaded ? "opacity-100 scale-100" : "opacity-0 absolute inset-0"
+              }`}
+              onLoad={() => setIsImageLoaded(true)}
             />
           </a>
         </div>

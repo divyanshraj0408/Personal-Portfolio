@@ -9,7 +9,7 @@ const Work = () => {
       description:
         "Canva for Data Analysis. A web application that allows users to create and collaborate on data analysis projects using a drag-and-drop interface.",
       image: "/pics/eracrux.svg",
-      tags: ["ReactJS", "PostgreSQL", "Drizzle ORM", "Groq","Typescript"],
+      tags: ["Nextjs", "PostgreSQL", "Drizzle ORM", "Groq","Typescript", "Drizzle", "Better-Auth", "Resend"],
       link: "https://eracrux.com/",
     },
     {
@@ -18,7 +18,7 @@ const Work = () => {
       description:
         "A platform for connecting like-minded individuals for collaborative projects and networking opportunities.",
       image: "/pics/meetmates.svg",
-      tags: ["React", "Node.js", "PostgreSQL", "WebRTC", "Socket.io"],
+      tags: ["Reactjs", "Node.js", "MongoDB", "WebRTC", "Socket.io", "Typescript", "Mongoose", "Express", "OCR","WebRTC"],
       link: "https://www.meetmates.space/",
     },
     {
