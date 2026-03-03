@@ -46,6 +46,7 @@ const Work = () => {
           />
         ))}
       </div>
+      <p className="text-center">Made by Divyansh</p>
     </>
   );
 };
