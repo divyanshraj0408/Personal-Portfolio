@@ -91,7 +91,7 @@ const Project = ({ image, title, description, tags, link }) => {
         {tags && tags.length > 0 && (
           <div className="rounded-2xl sm:rounded-3xl border border-white/10 bg-white/5 p-4 sm:p-6">
             <h3 className="text-base sm:text-lg font-semibold text-white">Stack</h3>
-            <ul className="mt-2 sm:mt-3 flex flex-wrap gap-1.5 sm:gap-2 tet-xs text-slate-300">
+            <ul className="mt-2 sm:mt-3 flex flex-wrap gap-1.5 sm:gap-2 text-xs text-slate-300">
               {tags.map((tag, index) => (
                 <li
                   key={index}
