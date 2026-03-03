@@ -5,11 +5,11 @@ const Footer = () => {
 
   return (
     <footer
-      className="bg-zinc-900/80 backdrop-blur-md border-t border-white/10 py-12"
+      className="bg-zinc-900/80 backdrop-blur-md border-t border-white/10 py-12 "
       id="contact"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div className="flex md:flex-row justify-between flex-col gap-8 ">
           {/* Column 1: Logo and Description */}
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Quick Links */}
-          <div>
+          {/* <div>
             <h4 className="text-lg font-medium text-white mb-4">Quick Links</h4>
             <nav className="flex flex-col space-y-3">
               <a
@@ -53,7 +53,7 @@ const Footer = () => {
                 Contact
               </a>
             </nav>
-          </div>
+          </div> */}
 
           {/* Column 3: Contact Info */}
           <div>
