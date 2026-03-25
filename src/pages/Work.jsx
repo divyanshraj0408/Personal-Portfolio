@@ -19,7 +19,7 @@ const Work = () => {
         "A platform for connecting like-minded individuals for collaborative projects and networking opportunities.",
       image: "/pics/meetmates.svg",
       tags: ["Reactjs", "Node.js", "MongoDB", "WebRTC", "Socket.io", "Typescript", "Mongoose", "Express", "OCR","WebRTC"],
-      link: "https://www.meetmates.space/",
+      link: "https://www.meet-mates.vercel.app/",
     },
     {
       id: 3,

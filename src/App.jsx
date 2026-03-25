@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import Work from "./pages/Work";
 import Info from "./pages/Info";
+import Kyb from "./pages/Kyb";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Work />} />
           <Route path="/info" element={<Info />} />
+          <Route path="/kyb" element={<Kyb />} />
         </Routes>
         <Footer />
       </div>
